@@ -1,0 +1,5 @@
+endpoint: https://us1.prisma.sh/felipe-luiz-soares-633aab/graphql-node-demo/dev
+
+datamodel: datamodel.graphql
+
+secret: mysecret123
