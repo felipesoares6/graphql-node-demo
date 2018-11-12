@@ -2,10 +2,6 @@ module.exports = {
   Query: {
     info: () => `GraphQL demo made with Node.js and Prisma`,
 
-    feed: (root, args, context, info) => {
-      return context.db.query.links({}, info)
-    },
-
     users: (root, args, context, info) => {
       return context.db.query.users({}, info)
     },
@@ -20,15 +16,6 @@ module.exports = {
   },
 
   Mutation: {
-    post: (root, args, context, info) => {
-      return context.db.mutation.createLink({
-        data: {
-          url: args.url,
-          description: args.description,
-        }
-      }, info)
-    },
-
     createUser: (root, args, context, info) => {
       return context.db.mutation.createUser({
         data: {

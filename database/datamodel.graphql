@@ -4,10 +4,3 @@ type User {
   name: String!
   email: String!
 }
-
-type Link {
-  id: ID! @unique
-  createdAt: DateTime!
-  description: String!
-  url: String!
-}
